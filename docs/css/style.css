@@ -1,5 +1,6 @@
 *{
 	box-sizing: border-box;
+	color: white;
 }
 
 body {
@@ -100,4 +101,46 @@ img {
 	.column {
 		flex:100%;
 	}
+}
+
+/*---------------------------------------------*/
+/*						BLOG				   */
+/*---------------------------------------------*/
+
+.general-section {
+  display: grid;
+  grid-template-columns: 1fr 3fr;  /* aside | contenido */
+  align-items: start;
+  width: 70%;
+  margin: 20px auto;
+}
+
+.general-section aside {
+  position: sticky;   /* se queda fijo al hacer scroll */
+  top: 0;
+  align-self: start;
+}
+
+.content-column {
+  display: flex;
+  flex-direction: column;  /* filas apiladas */
+  gap: 20px;
+}
+
+.blog-preview {
+  display: flex;
+  gap: 10px;
+}
+
+.descripcion {
+  text-align: justify;
+  width: 60%;
+  margin: 10px;
+}
+
+.vertical-line {
+  height: 200px;
+  width: 1px;
+  background-color: white;
+  margin: 5px;
 }
